@@ -69,7 +69,7 @@ Bash Aliases
 ===========
 `vim ~/.bash_aliases`
 
-```alias get='sudo apt-get install```
+```alias get='sudo apt-get install'```
 
 VLC
 ============
