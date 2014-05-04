@@ -166,6 +166,7 @@ set wrap
 set background=dark
 set wrapscan
 set mouse=a
+set clipboard=unnamedplus
 
 set tabstop=2
 set shiftwidth=2
@@ -179,6 +180,8 @@ let &printexpr="(v:cmdarg=='' ? ".
     \" : system('mv '.v:fname_in.' '.v:cmdarg) + v:shell_error)"
 
 ```
+also install 
+vim-gui-common
 
 Disable Ubuntu Guest Session
 ===================
