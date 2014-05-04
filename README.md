@@ -9,6 +9,7 @@ Chrome
 Download it from the website silly: https://www.google.com/intl/en/chrome/browser/ 
 
 AMD Processors: Choose 64 bit
+
 Intel Processors: Choose 32 bit
 
 
