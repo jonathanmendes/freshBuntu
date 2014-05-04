@@ -28,12 +28,16 @@ Disable SSH password login
 Change the line (51) `#PasswordAuthentication yes` to `PasswordAuthentication no`
 
 
+Git  - Reinstall
+==========
+`rm ~/.gitconfig`
+`sudo apt-get purge git`
+`sudo apt-get autoremove`
+
 Git
 ==========
-`sudo apt-get install git`
-
+`get git`
 `git config --global user.name "Your Name"`
-
 `git config --global user.email you@example.com`
 
 
