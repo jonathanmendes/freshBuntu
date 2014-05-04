@@ -110,6 +110,10 @@ https://www.digitalocean.com/community/articles/how-to-install-and-use-postgresq
 
 And also: `sudo apt-get install libpq-dev`
 
+Remember to change the pg_hba.conf:
+`vim /etc/postgresql/{% version number, currently USING 9.1 %}/main/pg_hba.conf`
+So that login settings are all of 'password' METHOD 
+
 MakerWare
 ============
 http://www.makerbot.com/support/makerware/documentation/linux-install/
