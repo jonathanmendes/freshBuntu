@@ -40,17 +40,13 @@ Git
 
 `git config --global user.email you@example.com`
 
-FileZilla
-==========
-`sudo apt-get install filezilla`
-
 DropBox
 ==========
 https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
 
 Remove Sudo Password Prompt
 ==========
-`sudo visudo`
+`sudo vim /etc/sudoers`
 
 Change the line (25) `%sudo ALL=(ALL) ALL` to `%sudo ALL=(ALL) NOPASSWD: ALL`
 
