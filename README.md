@@ -1,11 +1,22 @@
 freshBuntu
 ==========
 
-What to do when you have a fresh install of Ubuntu. Note this will become a script in the near future.
+What to do when you have a fresh install of Ubuntu. 
+Note that this will become a script in the near future.
 
 Chrome
 ==========
-`sudo apt-get install google-chrome-stable`
+Google Chrome isn't in the repositories - chromium is though
+
+To install Google Chrome, run the following:
+
+sudo apt-get install libxss1
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+
+//in the above command change i386 to amd64 if you are running an amd cpu
+sudo dpkg -i google-chrome*.deb
+
+This will install the actual google chrome
 
 GitHub Key Pair
 ==========
@@ -69,10 +80,9 @@ Bash Aliases
 ===========
 `vim ~/.bash_aliases`
 
-```alias get='sudo apt-get install'
-alias back = 'cd...'
+```alias get='sudo apt-get install'```
+```alias back = 'cd...'```
 
-```
 VLC
 ============
 `sudo apt-get install vlc`
