@@ -31,14 +31,36 @@ Change the line (51) `#PasswordAuthentication yes` to `PasswordAuthentication no
 Git  - Reinstall
 ==========
 `rm ~/.gitconfig`
+
 `sudo apt-get purge git`
+
 `sudo apt-get autoremove`
 
-Git
+Git - Install
 ==========
 `get git`
+
 `git config --global user.name "Your Name"`
+
 `git config --global user.email you@example.com`
+
+Git - Setting up a remote 
+==========
+`git remote add origin git@github.com:user/repo.git`
+
+Verify:
+`git remote -v`
+
+Git - Setting up a project
+==========
+http://gitref.org/creating/#clone
+
+Git - Resetting to the master branch
+==========
+`git fetch origin`
+
+`git reset --hard origin/master`
+
 
 
 DropBox
