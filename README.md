@@ -107,11 +107,9 @@ Git - Resetting to the master branch
 `git reset --hard origin/master`
 
 
-
 DropBox
 ==========
 https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
-
 
 
 BashRC Prompt
@@ -165,11 +163,6 @@ Pgadmin3
 `sudo apt-get install pgadmin3`
 
 
-Private Internet Access
-=============
-https://www.privateinternetaccess.com/pages/client-support/#ubuntu_openvpn_installer
-
-
 Google Voice
 ==============
 https://www.google.com/tools/dlpage/hangoutplugin/thankyou.html?platform=linux_ubuntu_x86_64
@@ -183,46 +176,6 @@ Gimp
 VLC
 ============
 `sudo apt-get install vlc`
-
-
-Vimrc
-==============
-```sh
-set nocompatible
-set nocompatible
-set number
-set ruler
-set backspace=indent,eol,start
-set autoindent
-set backup
-set backupdir=~/.vim/backups
-set history=100
-set showcmd
-set showmode
-set incsearch
-syntax on
-set hlsearch
-filetype plugin indent on
-set wrap
-set background=dark
-set wrapscan
-set mouse=a
-set clipboard=unnamedplus
-
-set tabstop=2
-set shiftwidth=2
-set expandtab
-
-set nospell
-
-let &printexpr="(v:cmdarg=='' ? ".
-    \"system('lpr' . (&printdevice == '' ? '' : ' -P' . &printdevice)".
-    \". ' ' . v:fname_in) . delete(v:fname_in) + v:shell_error".
-    \" : system('mv '.v:fname_in.' '.v:cmdarg) + v:shell_error)"
-
-```
-also install 
-vim-gui-common
 
 
 Disable Ubuntu Guest Session
