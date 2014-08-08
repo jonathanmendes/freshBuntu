@@ -185,30 +185,45 @@ Disable Ubuntu Guest Session
 Append the following `allow-guest=false`
 
 
+Compass
+============
+`sudo gem install compass`
+
+
 Node/NPM
 =====================
-An absolute pain.
+`sudo add-apt-repository ppa:chris-lea/node.js`
+`sudo apt-get update`
+`sudo apt-get install nodejs`
+
+Confirm
+
+`node --version`
+`npm -v`
 
 
 Grunt
 =====================
-Was painful because of above.
+`npm install grunt`
 
 
 Sublime Text Editor
 =====================
 Make sure you're the owner of the directory via the next 2 commands:
-- sudo chown -R {youruser}:{youruser}  "/home/{youruser}/.config/sublime-text-2"
-- sudo sublime
+`sudo chown -R {youruser}:{youruser}  "/home/{youruser}/.config/sublime-text-2"`
+`sudo sublime`
 
-Install the Package Control Manager via the following link: https://sublime.wbond.net/installation#st2
+Install the Package Control Manager via the following link: 
+https://sublime.wbond.net/installation#st3
+
+Install Brogrammer Theme
+https://github.com/kenwheeler/brogrammer-theme
 
 Install the following packages:
-- Theme - Brogrammer
 - AngularJS
 - AutoFileName
 - ColorPicker
-- CSS3_Syntax
+- CSS3
 - Emmet
 - EmmetCssSnippets
 - ExpandSelectiontoQuotes
@@ -221,6 +236,7 @@ Install the following packages:
 - Python3
 - PyV8
 - SCSS
+- SCSS Snippets
 - SearchAnywhere
 - SublimeLinter
 - SyntaxHighlightingforSASS
