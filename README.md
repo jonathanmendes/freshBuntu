@@ -2,7 +2,51 @@ freshBuntu
 ==========
 
 What to do when you have a fresh install of Ubuntu. 
-Note that this will become a script in the near future.
+
+
+Bash Aliases
+===========
+`vim ~/.bash_aliases`
+
+`alias get='sudo apt-get install'`
+
+`syd () {`
+  `cd ~/Dropbox/yunite-development/yunite`
+  `source ~/.bashrc`
+  `workon yunite`
+  `python manage.py runserver`
+`}`
+
+`syd2 () {`
+  `cd ~/Dropbox/yunite-development/yunite2`
+  `source ~/.bashrc`
+  `workon yunite2`
+  `python run.py dev`
+`}`
+
+`yd () {`
+  `cd ~/Dropbox/yunite-development/yunite`
+`}`
+
+`yd2 () {`
+  `cd ~/Dropbox/yunite-development/yunite2`
+`}`
+
+`pullonben () {`
+  `git pull origin ben-dev`
+`}`
+
+`pullonneil() {`
+  `git pull origin neil-dev`
+`}`
+
+
+Remove Sudo Password Prompt
+==========
+`sudo vim /etc/sudoers`
+
+Change the line (25) `%sudo ALL=(ALL) ALL` to `%sudo ALL=(ALL) NOPASSWD: ALL`
+
 
 Chrome
 ==========
@@ -69,12 +113,6 @@ DropBox
 https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
 
 
-Remove Sudo Password Prompt
-==========
-`sudo vim /etc/sudoers`
-
-Change the line (25) `%sudo ALL=(ALL) ALL` to `%sudo ALL=(ALL) NOPASSWD: ALL`
-
 
 BashRC Prompt
 ===========
@@ -94,24 +132,6 @@ Color Tab:
 Terminal: 
 
 ![alt text](https://raw.githubusercontent.com//mstokes5/freshBuntu/master/images/term.png "Terminal Color Tab")
-
-Gimp
-===========
-`sudo apt-get install gimp`
-
-
-Bash Aliases
-===========
-`vim ~/.bash_aliases`
-
-```alias get='sudo apt-get install'```
-```alias back = 'cd...'```
-
-
-VLC
-============
-`sudo apt-get install vlc`
-
 
 
 Pip
@@ -155,6 +175,16 @@ Google Voice
 https://www.google.com/tools/dlpage/hangoutplugin/thankyou.html?platform=linux_ubuntu_x86_64
 
 
+Gimp
+===========
+`sudo apt-get install gimp`
+
+
+VLC
+============
+`sudo apt-get install vlc`
+
+
 Vimrc
 ==============
 ```sh
@@ -194,16 +224,12 @@ let &printexpr="(v:cmdarg=='' ? ".
 also install 
 vim-gui-common
 
+
 Disable Ubuntu Guest Session
 ===================
 `gksu gedit /etc/lightdm/lightdm.conf`
 
 Append the following `allow-guest=false`
-
-
-VirtualBox
-====================
-`get virtualbox`
 
 
 Node/NPM
@@ -226,31 +252,22 @@ Install the Package Control Manager via the following link: https://sublime.wbon
 
 Install the following packages:
 - Theme - Brogrammer
-- SublimeLinter
-- SFTP :: Add paid key to Package->SFTP->User - Settings
-- Syntax Highlighting for Sass
-- Color Picker
-- CSS Snippets
-- CSS Format
+- AngularJS
+- AutoFileName
+- ColorPicker
 - CSS3_Syntax
-- CSS Lint
-- Djaniero
 - Emmet
-- Emmet CSS Snippets
-- Jquery Snippets pack
+- EmmetCssSnippets
+- ExpandSelectiontoQuotes
+- GitGutter
+- JSHintGutter
 - LiveStyle
-- LiveReload
-- Neat Sass Snippets
-- Autoprefixer
+- Open project path by shortcut
+- PackageControl
 - Placeholders
-- Prefixr
-- Python 3
+- Python3
+- PyV8
 - SCSS
-- SCSS Snippets
-- SASS Snippets
-- Foundation 5 Snippets
-- Search Wordpress Codes
-- Wordpress
-- Django-tools
-- Search Anywhere
-- Open Project Path by shortcut
+- SearchAnywhere
+- SublimeLinter
+- SyntaxHighlightingforSASS
