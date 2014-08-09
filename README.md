@@ -227,6 +227,7 @@ Install the following packages:
 - Emmet
 - EmmetCssSnippets
 - ExpandSelectiontoQuotes
+- Djaniero
 - GitGutter
 - JSHintGutter
 - LiveStyle
