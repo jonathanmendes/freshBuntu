@@ -116,7 +116,7 @@ BashRC Prompt
 ===========
 http://bashrcgenerator.com/
 
-`export PS1="\[\e[00;31m\]\A\[\e[0m\]\[\e[00;37m\] [\w] : @\[\e[0m\]"`
+`export PS1="\[\e[00;31m\]\A\[\e[0m\]\[\e[00;37m\] @ \[\e[0m\]\[\e[00;33m\]\w\[\e[0m\]\[\e[00;37m\]: \[\e[0m\]"`
 
 
 Linux Terminal
