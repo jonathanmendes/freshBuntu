@@ -204,7 +204,7 @@ Confirm
 
 Grunt
 =====================
-`npm install grunt`
+`npm install -g grunt-cli`
 
 
 Sublime Text Editor
