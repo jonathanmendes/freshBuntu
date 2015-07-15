@@ -1,7 +1,6 @@
 freshBuntu
 ==========
-
-What to do when you have a fresh install of Ubuntu. 
+What to do when Jon wants a fresh install of Ubuntu. 
 
 
 Bash Aliases
@@ -10,35 +9,7 @@ Bash Aliases
 
 `alias get='sudo apt-get install'`
 
-`syd () {`
-  `cd ~/Dropbox/yunite-development/yunite`
-  `source ~/.bashrc`
-  `workon yunite`
-  `python manage.py runserver`
-`}`
 
-`syd2 () {`
-  `cd ~/Dropbox/yunite-development/yunite2`
-  `source ~/.bashrc`
-  `workon yunite2`
-  `python run.py dev`
-`}`
-
-`yd () {`
-  `cd ~/Dropbox/yunite-development/yunite`
-`}`
-
-`yd2 () {`
-  `cd ~/Dropbox/yunite-development/yunite2`
-`}`
-
-`pullonben () {`
-  `git pull origin ben-dev`
-`}`
-
-`pullonneil() {`
-  `git pull origin neil-dev`
-`}`
 
 
 Remove Sudo Password Prompt
@@ -50,11 +21,7 @@ Change the line (25) `%sudo ALL=(ALL) ALL` to `%sudo ALL=(ALL) NOPASSWD: ALL`
 
 Chrome
 ==========
-Download it from the website silly: https://www.google.com/intl/en/chrome/browser/ 
-
-AMD Processors: Choose 64 bit
-
-Intel Processors: Choose 32 bit
+https://www.google.com/intl/en/chrome/browser/ 
 
 
 GitHub Key Pair
@@ -106,10 +73,6 @@ Git - Resetting to the master branch
 
 `git reset --hard origin/master`
 
-
-DropBox
-==========
-https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
 
 
 BashRC Prompt
@@ -178,6 +141,11 @@ VLC
 `sudo apt-get install vlc`
 
 
+Inkscape
+============
+https://inkscape.org/en/download/linux/
+
+
 Disable Ubuntu Guest Session
 ===================
 `gksu gedit /etc/lightdm/lightdm.conf`
@@ -185,8 +153,10 @@ Disable Ubuntu Guest Session
 Append the following `allow-guest=false`
 
 
-Compass
+Ruby & Compass
 ============
+`sudo apt-get install ruby`
+`sudo apt-get install ruby-dev`
 `sudo gem install compass`
 
 
@@ -207,37 +177,13 @@ Grunt
 `npm install -g grunt-cli`
 
 
-Sublime Text Editor
+Atom.io
 =====================
-Make sure you're the owner of the directory via the next 2 commands:
-`sudo chown -R {youruser}:{youruser}  "/home/{youruser}/.config/sublime-text-2"`
-`sudo sublime`
+https://atom.io/
 
-Install the Package Control Manager via the following link: 
-https://sublime.wbond.net/installation#st3
+Theme:
 
-Install Brogrammer Theme
-https://github.com/kenwheeler/brogrammer-theme
+Pacakages:
 
-Install the following packages:
-- AngularJS
-- AutoFileName
-- ColorPicker
-- CSS3
-- Emmet
-- EmmetCssSnippets
-- ExpandSelectiontoQuotes
-- Djaniero
-- GitGutter
-- JSHintGutter
-- LiveStyle
-- Open project path by shortcut
-- PackageControl
-- Placeholders
-- Python3
-- PyV8
-- SCSS
-- SCSS Snippets
-- SearchAnywhere
-- SublimeLinter
-- SyntaxHighlightingforSASS
+Macros:
+
