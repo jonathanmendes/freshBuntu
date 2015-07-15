@@ -100,7 +100,7 @@ Pip
 `sudo apt-get install python-pip`
 
 
-Virtualenv and Wrapper
+Virtualenv and wrapper
 ============
 http://roundhere.net/journal/virtualenv-ubuntu-12-10/
 
