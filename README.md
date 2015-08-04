@@ -7,8 +7,33 @@ Bash Aliases
 ===========
 `vim ~/.bash_aliases`
 
-`alias get='sudo apt-get install'`
+```
+alias get='sudo apt-get install'
 
+gs () {
+  cd ~/Projects/growsumo
+  source ~/.bashrc
+  workon gs
+  gunicorn -b 0.0.0.0:3000 --worker-class socketio.sgunicorn.GeventSocketIOWorker run:app
+#  python run.py go
+}
+
+go (){
+  gunicorn -b 0.0.0.0:3000 --worker-class socketio.sgunicorn.GeventSocketIOWorker run:app
+}
+
+
+gsfolder () {
+  cd ~/Projects/growsumo
+}
+
+
+gstart() {
+  gnome-terminal --working-directory=/home/jonathan/Projects/growsumo --geometry=110x20+5093+32 &
+  gnome-terminal --working-directory=/home/jonathan/Projects/growsumo --geometry=110x20+5093+382 &
+  gnome-terminal --working-directory=/home/jonathan/Projects/growsumo --geometry=110x20+5093+760 &
+}
+```
 
 
 
